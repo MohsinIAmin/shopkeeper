@@ -1,0 +1,11 @@
+<form>
+    <div class="form-group">
+        <label for="transactionName">Items1</label>
+        <input type="text" class="form-control" id="transactionName" [(ngModel)]="item1String" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class=" form-group">
+        <label for="items">Items2</label>
+        <input type="text" class="form-control" id="items" [(ngModel)]="item2String" [ngModelOptions]="{standalone: true}">
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="calculateConfidence()">Confidence</button>
+</form>

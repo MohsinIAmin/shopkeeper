@@ -1,0 +1,22 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Transaction</th>
+            <th>Items</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let transaction of transactions; let i=index">
+            <td>{{transaction.name}}</td>
+            <td>{{transaction.items}}</td>
+            <td>
+                <button class="btn btn-warning" (click)="updateTransaction(transaction,i)">Update</button>
+            </td>
+            <td>
+                <button class="btn btn-danger" (click)="deleteTransaction(transaction,i)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
